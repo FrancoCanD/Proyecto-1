@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -33,6 +34,48 @@
     <br>
     <section>
         <button onclick="mostrarmensaje()">Más información interno</button>
+    </section>
+    <section class="container">
+        <div class="row justify-content-md-center" id="miDivFila">
+            <div class="col col-ld-2 border border-secondary">1 de 3</div>
+            <div class="col col-ld-2 border border-secondary">2 de 3</div>
+            <div class="col col-ld-2 border border-secondary">3 de 3</div>
+        </div>
+    </section>
+    <section class="row">
+        <div class="col-6 border border-secondary rounded-3">
+            <h2>Caja 1 de 3</h2>
+        </div>
+        <div class="col-2 border border-secondary rounded-3">
+            <h2>Caja 2 de 3</h2>
+            <p id="lorem">
+                Texto de ejemplo para ejercicio
+            </p>
+        </div>
+        <div class="col-4 border border-secondary rounded-3">
+            <h2>Caja 3 de 3</h2>
+        </div>
+    </section>
+    <section class="container">
+        <h2>Formulario Interactivo</h2>
+        <p>Ingresa tu nombre y usa los botones</p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí">
+        <br><br>
+        <div class="acciones">
+            <button id="mostrarBtn" onclick="mostrar()">Mostrar</button>
+            <button id="formatearBtn" onclick="formatear()">Formatear</button>
+            <button id="finalizarBtn" onclick="finalizar()">Fin</button>
+        </div>
+        <section class="salida border border-secundary rounded-3 mt-3 px-3">
+            <h2>Salida</h2>
+            <p id="salida"></p>
+        </section>
+        <section class="historial border border-secundary rounded-3 my-3 px-3">
+            <h2>Historial</h2>
+            <div id="historial">
+            </div>
+        </section>
     </section>
     <script>
         function mostrarmensaje() {

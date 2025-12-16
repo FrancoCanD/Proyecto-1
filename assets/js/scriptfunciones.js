@@ -12,7 +12,7 @@ function calcularAreaRectangulo(base, altura) {
     return area;
 }
 
-let area1 = calcularAreaRectangulo(5; 10);
+let area1 = calcularAreaRectangulo(5, 10);
 console.log("El área del rectángulo es: " + area1);
 
 let baseIngresada = 7;
